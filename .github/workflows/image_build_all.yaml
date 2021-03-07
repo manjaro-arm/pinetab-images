@@ -124,7 +124,7 @@ jobs:
           VERSION: "beta2"
         run: |
           sudo mv -v /home/runner/work/pinetab-images/pinetab-images/arm-profiles /usr/share/manjaro-arm-tools/profiles
-          sudo buildarmimg -d pinetab -e $EDITION -k mobile
+          sudo buildarmimg -d pinetab -e $EDITION -v $VERSION -b $BRANCH-k mobile
           
           ls -lasih /var/cache/manjaro-arm-tools/img
           
@@ -271,7 +271,7 @@ jobs:
           VERSION: "beta2"
         run: |
           sudo mv -v /home/runner/work/pinetab-images/pinetab-images/arm-profiles /usr/share/manjaro-arm-tools/profiles
-          sudo buildarmimg -d pinetab -e $EDITION
+          sudo buildarmimg -d pinetab -e $EDITION -v $VERSION -b $BRANCH
           
           ls -lasih /var/cache/manjaro-arm-tools/img
           
@@ -418,7 +418,7 @@ jobs:
           VERSION: "beta2"
         run: |
           sudo mv -v /home/runner/work/pinetab-images/pinetab-images/arm-profiles /usr/share/manjaro-arm-tools/profiles
-          sudo buildarmimg -d pinetab -e $EDITION
+          sudo buildarmimg -d pinetab -e $EDITION -v $VERSION -b $BRANCH
           
           ls -lasih /var/cache/manjaro-arm-tools/img
           
