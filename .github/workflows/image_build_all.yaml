@@ -24,7 +24,7 @@ jobs:
         with:
           #tag_name: ${{ steps.time.outputs.time }}
           tag_name: "Beta2"
-          release_name: Pinetab ${{ steps.time.outputs.time }}
+          #release_name: Pinetab ${{ steps.time.outputs.time }}
           release_name: Pinetab Beta2
           draft: false
           prerelease: true
