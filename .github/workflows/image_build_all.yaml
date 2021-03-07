@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           #tag_name: ${{ steps.time.outputs.time }}
-          tag_name: "Beta2"
+          tag_name: "beta2"
           #release_name: Pinetab ${{ steps.time.outputs.time }}
           release_name: Pinetab Beta2
           draft: false
@@ -38,7 +38,7 @@ jobs:
     strategy:
       matrix:
         EDITION: [plasma-mobile]
-        BRANCH: [stable]
+        BRANCH: [testing]
     steps:
       - 
         uses: styfle/cancel-workflow-action@0.7.0
@@ -179,13 +179,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  release_xfce:
+  release_phosh:
     runs-on: ubuntu-20.04
     needs: prepare_release
     strategy:
       matrix:
         EDITION: [phosh]
-        BRANCH: [stable]
+        BRANCH: [testing]
     steps:
       - 
         uses: styfle/cancel-workflow-action@0.7.0
@@ -326,13 +326,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  release_mate:
+  release_lomiri:
     runs-on: ubuntu-20.04
     needs: prepare_release
     strategy:
       matrix:
         EDITION: [lomiri]
-        BRANCH: [stable]
+        BRANCH: [testing]
     steps:
       - 
         uses: styfle/cancel-workflow-action@0.7.0
