@@ -37,7 +37,7 @@ jobs:
     strategy:
       matrix:
         DEVICE: [pinetab]
-        EDITION: [lomiri,phosh,plasma-mobile]
+        EDITION: [phosh,plasma-mobile]
         BRANCH: [testing]
     steps:
       - 
