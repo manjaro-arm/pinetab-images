@@ -22,9 +22,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           #tag_name: ${{ steps.time.outputs.time }}
-          tag_name: "beta2"
+          tag_name: "beta3"
           #release_name: Pinetab ${{ steps.time.outputs.time }}
-          release_name: Beta2
+          release_name: Beta3
           draft: false
           prerelease: true
     outputs:
@@ -122,7 +122,7 @@ jobs:
           EDITION: ${{ matrix.EDITION }}
           BRANCH: ${{ matrix.BRANCH }}
           #VERSION: ${{ steps.time.outputs.time }}
-          VERSION: "beta2"
+          VERSION: "beta3"
         run: |
           sudo mv -v $GITHUB_WORKSPACE/arm-profiles /usr/share/manjaro-arm-tools/profiles
           sudo buildarmimg -d $DEVICE -e $EDITION -v $VERSION -b $BRANCH -k mobile
