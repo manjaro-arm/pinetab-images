@@ -22,9 +22,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           #tag_name: ${{ steps.time.outputs.time }}
-          tag_name: "beta3"
+          tag_name: "beta4"
           #release_name: Pinetab ${{ steps.time.outputs.time }}
-          release_name: Beta3
+          release_name: Beta4
           draft: false
           prerelease: true
     outputs:
